@@ -1,0 +1,226 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+    border-bottom: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 img {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    transition: transform 0.3s;
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+header h1 img:hover {
+    transform: scale(1.05);
+}
+
+.icons img {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+    background-color: #181818;
+    flex: 1;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-block {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.content-block:hover {
+    background-color: #444;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.content-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+.content-block img:hover {
+    border-color: #007BFF;
+}
+
+
+
+.consoles-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.consoles-table th, .consoles-table td {
+    padding: 15px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+.consoles-table th {
+    background-color: #333;
+}
+
+.consoles-table tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+.generation {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.generation img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+    object-fit: contain;
+    transition: transform 0.3s;
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+.generation img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 2px solid #333;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer .social-icons a img {
+    width: 30px;
+    height: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1em 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-block {
+        max-width: 100%;
+    }
+}
+.return-button {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.return-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.return-button a:hover {
+    background-color: #0056b3;
+}
+.content-block img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionar */
+    border: 2px solid #444;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+.content-block img:hover {
+    border-color: #007BFF;
+}
+
+
